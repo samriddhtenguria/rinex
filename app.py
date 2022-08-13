@@ -9,7 +9,7 @@ st.title("NATIONALIST COMMENTS CLASSIFIER")
 ip = st.text_input("Enter your message:")
 
 #predict if the entered message is nationalist or not 
-op = model.predict([ip])
+op = model_nb.predict([ip])
 if st.button('IS NATIONALIST'):
   st.title(op[0])  #prints the output as true if comment is nationalist and false otherwise  
            
